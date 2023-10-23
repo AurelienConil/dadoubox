@@ -1,0 +1,16 @@
+#N canvas 182 187 916 464 10;
+#X declare -path patches;
+#X obj 5 87 cnv 15 800 230 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 15 89 ui/ui_loop 1 1;
+#X obj 161 89 ui/ui_loop 2 1;
+#X obj 308 89 ui/ui_loop 3 1;
+#X obj 5 0 nogui;
+#X obj 7 263 ui/ui_tempo_small;
+#X obj 78 335 declare -path patches;
+#X obj 472 94 ui/ui_sampler 1 1;
+#X obj 472 123 ui/ui_sampler 2 1;
+#X obj 472 152 ui/ui_sampler 3 1;
+#X obj 472 181 ui/ui_sampler 4 1;
+#X obj 624 92 ui/ui_reverb;
+#X obj 720 92 ui/ui_octaver;
