@@ -19,8 +19,7 @@
 #X obj 306 263 readsf~;
 #X obj 54 126 extra/sv \$1_\$2_fileplayer_playstop;
 #X obj 228 333 audio/mixer \$1_\$2_fileplayer;
-#X obj 135 98 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 135 98 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 306 209 symbol;
 #X msg 306 234 open \$1;
 #X obj 86 180 t b b b;
@@ -55,6 +54,13 @@
 #X obj 18 448 extra/sv \$1_\$2_fileplayer_end;
 #X obj 147 35 extra/sv \$1_\$2_fileplayer_end;
 #X msg 345 118 symbol ../sounds/file\$1.wav;
+#N canvas 68 97 450 300 init 1;
+#X obj 161 87 loadbang;
+#X obj 168 185 extra/sv \$1_\$2_fileplayer_volume;
+#X msg 161 114 150;
+#X connect 0 0 2 0;
+#X connect 2 0 1 1;
+#X restore 594 104 pd init;
 #X connect 0 0 9 0;
 #X connect 1 0 9 0;
 #X connect 4 0 1 0;

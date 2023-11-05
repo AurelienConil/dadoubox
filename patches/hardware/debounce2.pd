@@ -6,10 +6,12 @@
 #X obj 124 276 outlet;
 #X msg 214 210 1;
 #X obj 124 130 spigot 1;
-#X obj 150 245 delay 110;
+#X obj 150 245 delay 600;
+#X obj 33 338 print debounce;
 #X connect 0 0 6 0;
 #X connect 1 0 6 1;
 #X connect 2 0 4 0;
+#X connect 2 0 8 0;
 #X connect 2 1 7 0;
 #X connect 2 2 3 0;
 #X connect 3 0 1 0;
